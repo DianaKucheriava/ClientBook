@@ -49,7 +49,7 @@ session_start();
 							}
 							else
 							   {
-							    echo "Ви увійшли на сайт, як ". $_SESSION ['login']. "<br> <a href='https://github.com/DianaKucheriava/Cometa_/deployments'> Це посилання доступна тільки зареєстрованим користувачам </a>";
+							    echo "Ви увійшли на сайт, як ". $_SESSION ['login']. "<br> <a href='https://github.com/DianaKucheriava/Cometa_/deployments'> Це посилання доступне тільки зареєстрованим користувачам </a>";
 							   } ?>
 					</p>
                            <h3>Що таке COCOMO модель?</h3>
@@ -82,7 +82,7 @@ session_start();
                                               </p>
                                               <p>
                                                 <input type="hidden" name="page_id" value="1" />
-                                                <input type="submit" value="Отправить" />
+                                                <input type="submit" value="Залишити" />
                                               </p>
                                         </form>
                                     </div>
