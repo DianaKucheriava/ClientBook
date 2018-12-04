@@ -3,7 +3,7 @@ session_start();
 		if (isset($_POST['login'])) { $login = $_POST['login']; if ($login == '') { unset($login);} } 
 		if (isset($_POST['password'])) { $password=$_POST['password']; if ($password =='') { unset($password);} }
 		if (empty($login) or empty($password)){
-				exit ("Ви ввели не всю інформацію, венітесь назад і заповніть всі поля!");
+				exit ("Ви ввели не всю інформацію, поверніться назад і заповніть всі поля!");
 				}
 					$login = stripslashes($login);
 					$login = htmlspecialchars($login);
@@ -16,7 +16,7 @@ session_start();
 				$myrow = mysqli_fetch_array($result);
 			if (empty($myrow['password']))
 			{
-				exit ("Вибачте, введений вами логін або пароль невірний. Зареэструйтесь та спробуйте знову <a href='reg.php'> Реєстрація </a>");
+				exit ("Вибачте, введений Вами логін або пароль невірний. Зареєструйтесь та спробуйте знову <a href='reg.php'> Реєстрація </a>");
 			}
 			 else {
 			          if ($myrow['password']==$password) {
